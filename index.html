@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>沖本本　第二章</title>
+  <meta name="description" content="沖本本　第二章">
+  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+
+  <meta property="og:title" content="沖本本　第二章" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="沖本本　第二章" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path=""><a href="#p.54"><i class="fa fa-check"></i>2. 問題(p.54)</a><ul>
+<li class="chapter" data-level="" data-path=""><a href="#ar22.182.19"><i class="fa fa-check"></i>2.1. AR(2)過程(2.18)の定常条件が(2.19)で与えられることを確認せよ。</a></li>
+<li class="chapter" data-level="" data-path=""><a href="#322e322e20e6aca1e381aee383a2e38387e383abe381aee4b8ade3818be38289e38081e5ae9ae5b8b8e381aae383a2e38387e383abe381a8e58f8de8bba2e58fafe883bde381aae383a2e38387e383abe38292e38199e381b9e381a6e981b8e68a9ee3819be38288e38082"><i class="fa fa-check"></i>2.2. 次のモデルの中から、定常なモデルと反転可能なモデルをすべて選択せよ。</a><ul>
+<li class="chapter" data-level="" data-path=""><a href="#a"><i class="fa fa-check"></i>モデル(a)について</a></li>
+<li class="chapter" data-level="" data-path=""><a href="#b"><i class="fa fa-check"></i>モデル(b)について</a></li>
+<li class="chapter" data-level="" data-path=""><a href="#c"><i class="fa fa-check"></i>モデル(c)について</a></li>
+<li class="chapter" data-level="" data-path=""><a href="#d"><i class="fa fa-check"></i>モデル(d)について</a></li>
+<li class="chapter" data-level="" data-path=""><a href="#e"><i class="fa fa-check"></i>モデル(e)について</a></li>
+<li class="chapter" data-level="" data-path=""><a href="#f"><i class="fa fa-check"></i>モデル(f)について</a></li>
+<li class="chapter" data-level="" data-path=""><a href="#e381bee381a8e38281"><i class="fa fa-check"></i>まとめ</a></li>
+</ul></li>
+<li><a href="#ma2-y_tmuepsilon_ttheta_1epsilon_t-1theta_2epsilon_t-2-epsilon_t-sim-w-.-n-.leftsigma2right-">2.3. MA(2)過程 <span class="math display">\[y_{t}=\mu+\epsilon_{t}+\theta_1\epsilon_{t-1}+\theta_2\epsilon_{t-2}, \epsilon_{t} \sim W . N .\left(\sigma^{2}\right)\]</span> について、以下の問いに答えよ。</a><ul>
+<li><a href="#ey_t">(1) <span class="math inline">\(E(y_{t})\)</span>を求めよ。</a></li>
+<li><a href="#gamma_0">(2) <span class="math inline">\(\gamma_{0}\)</span>を求めよ。</a></li>
+<li><a href="#gamma_1">(3) <span class="math inline">\(\gamma_{1}\)</span>を求めよ。</a></li>
+<li><a href="#gamma_2">(4) <span class="math inline">\(\gamma_{2}\)</span>を求めよ。</a></li>
+<li><a href="#k-geq-3gamma_k-0">(5) <span class="math inline">\(k \geq 3\)</span>に対して、<span class="math inline">\(\gamma_{k} = 0\)</span>となることを確認せよ。</a></li>
+</ul></li>
+<li><a href="#arma11-y_t-c-y_t-1-epsilon_t-theta_1epsilon_t-1-epsilon_t-sim-w-.-n-.leftsigma2right">2.4. ARMA(1,1)過程 <span class="math display">\[y_{t} = c + y_{t-1} + \epsilon_{t} + \theta_1\epsilon_{t-1}, \epsilon_{t} \sim W . N .\left(\sigma^{2}\right)\]</span>について、以下の問いに答えよ。</a><ul>
+<li class="chapter" data-level="" data-path=""><a href="#283129e5ae9ae5b8b8e69da1e4bbb6e38292e6b182e38281e38288e38082"><i class="fa fa-check"></i>(1)定常条件を求めよ。</a></li>
+<li class="chapter" data-level="" data-path=""><a href="#283229e58f8de8bba2e58fafe883bde69da1e4bbb6e38292e6b182e38281e38288e38082"><i class="fa fa-check"></i>(2)反転可能条件を求めよ。</a></li>
+<li><a href="#mu">(3)<span class="math inline">\(\mu\)</span>を求めよ。</a></li>
+<li><a href="#gamma_0operatornamecovy_t-1-epsilon_t0-operatornamecovy_t-1-epsilon_t-1sigma2">(4)<span class="math inline">\(\gamma_0\)</span>を求めよ。(ヒント：<span class="math inline">\(\operatorname{Cov}(y_{t-1}, \epsilon_t)=0, ~ \operatorname{Cov}(y_{t-1}, \epsilon_{t-1})=\sigma^{2}\)</span>に注意すること)</a></li>
+<li><a href="#gamma_1-1">(5)<span class="math inline">\(\gamma_1\)</span>を求めよ。</a></li>
+<li class="chapter" data-level="0.0.1" data-path=""><a href="#phi_1"><i class="fa fa-check"></i><b>0.0.1</b> (6)<span class="math inline">\(\phi_1\)</span>を求めよ。</a></li>
+<li><a href="#k-geq-2rho_k">(7)ユール・ウォーカー方程式を用いて、<span class="math inline">\(k \geq 2\)</span>において<span class="math inline">\(\rho_k\)</span>を求めよ。</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path=""><a href="#1.5"><i class="fa fa-check"></i>2.5 問題1.5でダウンロードしたデータを用いて以下の問いに答えよ。</a><ul>
+<li class="chapter" data-level="" data-path=""><a href="#2.32.5"><i class="fa fa-check"></i>(1)表2.3と図2.5の結果を比較せよ。</a></li>
+<li class="chapter" data-level="" data-path=""><a href="#ar4arma1210"><i class="fa fa-check"></i>(2)AR(4)モデルとARMA(1,2)モデルの残差について、10期までの自己相関をかばん検定せよ。</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path=""><a href="#section"><i class="fa fa-check"></i>2.6</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">沖本本　第二章</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="header">
+<h1 class="title">沖本本　第二章</h1>
+</div>
+<div id="p.54" class="section level1 unnumbered">
+<h1>2. 問題(p.54)</h1>
+<p>どうも、<a href="https://twitter.com/hiyakebaka">HRY</a>です。 <a href="https://yahiroya.github.io/OkimotoBook/">前回</a>の投稿から間がかなり空いてしまいましたが、つづきの第2章の章末問題をやっていこうと思います。</p>
+<div id="ar22.182.19" class="section level2 unnumbered">
+<h2>2.1. AR(2)過程(2.18)の定常条件が(2.19)で与えられることを確認せよ。</h2>
+<p>まず、(2.18)のAR(2) モデルが、 <span class="math display">\[
+y_{t}=c+\phi_{1} y_{t-1}+\phi_{2} y_{t-2}+\epsilon_{t}, \epsilon_{t} \sim W . N .\left(\sigma^{2}\right)
+\]</span> がこちらで、その定常条件が以下に示す(2.19)の3つの条件であることを確認します。 <span class="math display">\[
+\begin{array}{l}{\text { 1. } \phi_{2}&lt;1+\phi_{1}} \\ {\text { 2. } \phi_{2}&lt;1-\phi_{1}} \\ {\text { 3. } \phi_{2}&gt;-1}\end{array}
+\]</span> まず対象とするAR(2) 過程の特性方程式は(2.15)の一般式から、 <span class="math display">\[
+1-\phi_{1} z-\phi_{2} z^{2}=0
+\]</span> となります。問題を解きやすくするため、<span class="math inline">\(z^{-1}=\lambda\)</span>とおくと、 <span class="math display">\[
+\lambda^{2}-\phi_{1} \lambda-\phi_{2}=0
+\]</span> と式を変形できます。</p>
+<p>特性方程式の解<span class="math inline">\(z\)</span>のすべての絶対値が1より大きくなるとき、その過程は定常となるので、上記の2次方程式の解<span class="math inline">\(\lambda\)</span>が、 <span class="math display">\[
+|z|&gt;1 \Leftrightarrow|\lambda|=\left|z^{-1}\right|&lt;1
+\]</span> を満たせばよいということになります。</p>
+<p>この2次方程式の解<span class="math inline">\(\lambda\)</span>は、 <span class="math display">\[
+\lambda_{1,2}=\frac{\phi_{1} \pm \sqrt{\phi_{1}^{2}+4 \phi_{2}}}{2}
+\]</span> です。</p>
+<p>そして、<span class="math inline">\(|\lambda|&lt;1\)</span>から、 <span class="math display">\[
+\begin{aligned}-1&lt;\frac{\phi_{1} \pm \sqrt{\phi_{1}^{2}+4 \phi_{2}}}{2} &amp;&lt;1 \\ \Rightarrow-2&lt;\phi_{1} \pm \sqrt{\phi_{1}^{2}+4 \phi_{2}} &amp;&lt;2 \end{aligned}
+\]</span> という不等式が導かれます。</p>
+<p><span class="math inline">\(\phi_{1}^{2}+4 \phi_{2}\)</span>が正、つまり<span class="math inline">\(\lambda_{1,2}\)</span>が実数である場合、 <span class="math display">\[
+\begin{aligned} \phi_{1}+\sqrt{\phi_{1}^{2}+4 \phi_{2}} &amp;&lt;2 \\ \Rightarrow \sqrt{\phi_{1}^{2}+4 \phi_{2}} &amp;&lt;2-\phi_{1} \\ \Rightarrow \phi_{1}^{2}+4 \phi_{2} &amp;&lt;\left(2-\phi_{1}\right)^{2} \\ \Rightarrow \phi_{1}^{2}+4 \phi_{2} &amp;&lt;4-4 \phi_{1}+\phi_{1}^{2} \\ \Rightarrow \phi_{2} &amp;&lt;1-\phi_{1} \end{aligned}
+\]</span> から、上記の2番目の条件が導かれます。</p>
+<p>そして、<span class="math inline">\(-2&lt;\phi_{1}-\sqrt{\phi_{1}^{2}+4 \phi_{2}}\)</span>から、同様にして <span class="math display">\[
+\phi_{2}&lt;1+\phi_{1}
+\]</span> 上記の1番目の条件も導くことができます。</p>
+<p>一方で、<span class="math inline">\(\phi_{1}^{2}+4 \phi_{2}\)</span>が負、つまり<span class="math inline">\(\lambda_{1,2}\)</span>が複素数である場合、<span class="math inline">\(\phi_{1}^{2}&lt;-4 \phi_{2}\)</span>であり、解<span class="math inline">\(\lambda_{1,2}\)</span>は <span class="math display">\[
+\lambda_{1,2}=\phi_{1} / 2 \pm i \sqrt{-\left(\phi_{1}^{2}+4 \phi_{2}\right)} / 2
+\]</span> となり、両辺を二乗すると <span class="math display">\[
+\lambda^{2}=\left(\phi_{1} / 2\right)^{2}+\left(\sqrt{-\left(\phi_{1}^{2}+4 \phi_{2}\right)} / 2\right)^{2}=\phi_{1}^{2} / 4-\left(\phi_{1}^{2}+4 \phi_{2}\right) / 4=-\phi_{2}
+\]</span> となります。</p>
+<p><span class="math inline">\(|\lambda|&lt;1\)</span>より、 <span class="math display">\[
+-\phi_2&lt;1 \Leftrightarrow \phi_2&gt;-1 
+\]</span> という不等式が導かれ、上記3番目の条件が導かれます。</p>
+<p>以上から、AR(2) 過程の定常条件は <span class="math display">\[
+\begin{array}{l}{\text { 1. } \phi_{2}&lt;1+\phi_{1}} \\ {\text { 2. } \phi_{2}&lt;1-\phi_{1}} \\ {\text { 3. } \phi_{2}&gt;-1}\end{array}
+\]</span> であることが確認できました。 因みに、この条件を図示するとこのようになります。 <img src="ar2_stationary2.PNG"></p>
+<p>引用元：<a href="https://stats.stackexchange.com/questions/118019/a-proof-for-the-stationarity-of-an-ar2">SlackExchage</a></p>
+</div>
+<div id="322e322e20e6aca1e381aee383a2e38387e383abe381aee4b8ade3818be38289e38081e5ae9ae5b8b8e381aae383a2e38387e383abe381a8e58f8de8bba2e58fafe883bde381aae383a2e38387e383abe38292e38199e381b9e381a6e981b8e68a9ee3819be38288e38082" class="section level2 unnumbered">
+<h2>2.2. 次のモデルの中から、定常なモデルと反転可能なモデルをすべて選択せよ。</h2>
+<p><span class="math display">\[
+y_{t}=2+\epsilon_{t}, \epsilon_{t} \sim W . N .\left(\sigma^{2}\right) ...(a)
+\]</span> <span class="math display">\[
+y_{t}=\epsilon_{t}+\epsilon_{t-1}, \epsilon_{t} \sim W . N .\left(\sigma^{2}\right) ...(b)
+\]</span> <span class="math display">\[
+y_{t}=\epsilon_{t}+0.3\epsilon_{t-1}+0.7\epsilon_{t-2}, \epsilon_{t} \sim W . N .\left(\sigma^{2}\right) ...(c)
+\]</span> <span class="math display">\[
+y_{t}=0.5y_{t-1}+\epsilon_{t}, \epsilon_{t} \sim W . N .\left(\sigma^{2}\right) ...(d)
+\]</span> <span class="math display">\[
+y_{t}=1.3y_{t-1}-0.4y_{t-2}+\epsilon_{t}, \epsilon_{t} \sim W . N .\left(\sigma^{2}\right) ...(e)
+\]</span> <span class="math display">\[
+y_{t}=y_{t-1}+\epsilon_{t}+0.5\epsilon_{t-1}, \epsilon_{t} \sim W . N .\left(\sigma^{2}\right) ...(f)
+\]</span> この問題で確認することは3点です。</p>
+<p><em>1. 対象とするMA過程であれば、その過程は常に定常であり、MA特性方程式の解のすべての解が1より大きいか確認する。もし、そのようであれば対象過程は定常かつ反転可能である。</em></p>
+<p><em>2. 対象とする過程がAR過程であれば、AR特性方程式の解がすべて1より大きい（定常性）かどうか確認する。</em></p>
+<p><em>3. 対象とする過程がARMA過程である場合、そのモデルのMA部分について1の反転性の確認、AR部分について2の定常性の確認を行う。 </em></p>
+<p>MA特性方程式は <span class="math display">\[
+1+\theta_{1} z+\ldots+\phi_{p} z^{p}=0
+\]</span> AR特性方程式は <span class="math display">\[
+1-\phi_{1} z-\ldots-\phi_{p} z^{p}=0
+\]</span> です。</p>
+<div id="a" class="section level3 unnumbered">
+<h3>モデル(a)について</h3>
+<p>これは、MA過程でも、AR過程でもないモデルです。従って、1次以降に自己共分散を持たず(<span class="math inline">\(\gamma_k=0(k=1,2,\ldots)\)</span>)、時間に依存しない期待値<span class="math inline">\(\mu\)</span>をもつはずです。 <span class="math display">\[
+\begin{aligned} 
+\operatorname{Cov}(y_t, y_{t-k}) &amp;= \mathrm{E}[(y_t-\mu_t)(y_{t-k}-\mu_{t-k})] \\
+&amp;=E[(2+\epsilon_t-2)(2+\epsilon_{t-k}-2)] \\
+&amp;=E[(\epsilon_t-0)(\epsilon_{t-k}-0)] \\
+&amp;=\gamma_k
+\end{aligned}
+\]</span> <span class="math display">\[
+\begin{aligned}
+\mathrm{E}(y_t) &amp;= \mathrm{E}(2+\epsilon_t) \\
+&amp;= \mathrm{E}(2) + \mathrm{E}(\epsilon_t) \\
+&amp;= 2+0 \\
+&amp;= 2 \\
+&amp;= \mu
+\end{aligned}
+\]</span> という定常性の定義が成り立つので、モデル(a)は定常過程です。しかし、擾乱項についてARモデルの形に変形できないので、反転可能ではありません。</p>
+</div>
+<div id="b" class="section level3 unnumbered">
+<h3>モデル(b)について</h3>
+<p>このモデルは、MA(1)過程です。</p>
+<p>MA特性方程式は <span class="math display">\[
+\begin{aligned}
+1+1\times z &amp;= 0 \\
+z &amp;= -1 
+\end{aligned}
+\]</span> 従って、MA特性方程式のすべての解の絶対値が1より大きいという条件を満たさないので、モデル(b)は定常かつ反転不可能なモデルです。</p>
+</div>
+<div id="c" class="section level3 unnumbered">
+<h3>モデル(c)について</h3>
+<p>このモデルは、MA(2)過程です。</p>
+<p>MA特性方程式は <span class="math display">\[
+\begin{aligned}
+1-0.3z+0.7z^2 &amp;= 0 \\
+7z^2-3z+10&amp;=0 \\
+z_{1,2} &amp;= \frac{3 \pm i\sqrt{-271}}{14} \\
+|z| &amp;= \sqrt{(3/14)^2+(-271)^2} \\
+&amp;\simeq 271 &gt; 1
+\end{aligned}
+\]</span> 解が複素数解になるが、絶対値が1より大きいので、モデル(c)は定常かつ反転可能なモデルです。</p>
+</div>
+<div id="d" class="section level3 unnumbered">
+<h3>モデル(d)について</h3>
+<p>このモデルは、AR(1)過程です。</p>
+<p>AR特性方程式は <span class="math display">\[
+\begin{aligned}
+1-0.5z &amp;= 0 \\
+z &amp;= 2 &gt; 1
+\end{aligned}
+\]</span> であるので、モデル(d)は定常かつ反転不可能なモデルです。</p>
+</div>
+<div id="e" class="section level3 unnumbered">
+<h3>モデル(e)について</h3>
+<p>このモデルは、AR(2) 過程です。</p>
+<p>この問いでは、問1で確認した定常条件を用います。 <span class="math display">\[
+1+\phi_1 = 1+1.3 = 2.3 &gt; \phi_2 \\
+1-\phi_1 = 1-1.3 = -0.3 &gt; \phi_2 \\
+\phi_2 = -0.4 &gt; -1
+\]</span> となり、3条件を満たすので、モデル(e)は定常かつ反転不可能なモデルです。</p>
+</div>
+<div id="f" class="section level3 unnumbered">
+<h3>モデル(f)について</h3>
+<p>このモデルは、ARMA(1,1)過程です。</p>
+<p>まず、AR部分の特性方程式は <span class="math display">\[
+\begin{aligned}
+1-1\cdot z &amp;= 0 \\
+z &amp;= 1
+\end{aligned}
+\]</span> となり、絶対値が1より小さいので非定常であると分かります。</p>
+<p>そして、MA部分の特性方程式は <span class="math display">\[
+\begin{aligned}
+1+0.5z &amp;= 0 \\
+z &amp;= -2 \Rightarrow |z| &gt; 1
+\end{aligned}
+\]</span> となり、反転可能であることが分かります。</p>
+<p>従って、モデル(f)は非定常かつ反転可能なモデルです。</p>
+</div>
+<div id="e381bee381a8e38281" class="section level3 unnumbered">
+<h3>まとめ</h3>
+<p>以上より、</p>
+<ul>
+<li>定常なモデル：モデル(f)以外のすべて</li>
+<li>反転可能なモデル：モデル(c), (f)</li>
+</ul>
+<p>という結論になります。</p>
+</div>
+</div>
+<div id="ma2-y_tmuepsilon_ttheta_1epsilon_t-1theta_2epsilon_t-2-epsilon_t-sim-w-.-n-.leftsigma2right-" class="section level2 unnumbered">
+<h2>2.3. MA(2)過程 <span class="math display">\[y_{t}=\mu+\epsilon_{t}+\theta_1\epsilon_{t-1}+\theta_2\epsilon_{t-2}, \epsilon_{t} \sim W . N .\left(\sigma^{2}\right)\]</span> について、以下の問いに答えよ。</h2>
+<p>まず、問題に入る前に定理2.1(p.24)のMA(q)過程の性質の確認をしておきましょう。</p>
+<p><span class="math display">\[
+\begin{array}{l}
+{\text {1. } E(y_{t})=\mu} \\
+{\text {2. } \gamma_{0}=\operatorname{Var}\left(y_{t}\right)=\left(1+\theta_{1}^{2}+\cdots+\theta_{q}^{2}\right) \sigma^{2}} \\
+{\text {3. } \gamma_{k}=\left\{\begin{array}{ll}{\left(\theta_{k}+\theta_{1} \theta_{k+1}+\cdots+\theta_{q-k} \theta_{q}\right) \sigma^{2},} &amp; {1 \leq k \leq q} \\ {0,} &amp; {k \geq q+1}\end{array}\right.} \\
+{\text {4. } MA過程は常に定常} \\
+{\text {5. } \rho_{k}=\left\{\begin{array}{ll}{\frac{\theta_{k}+\theta_{1} \theta_{k+1}+\cdots+\theta_{q-k} \theta_{q}}{1+\theta_{1}^{2}+\cdots+\theta_{q}^{2}},} &amp; {1 \leq k \leq q} \\ {0,} &amp; {k \geq q+1}\end{array}\right.}
+\end{array}
+\]</span></p>
+<div id="ey_t" class="section level3 unnumbered">
+<h3>(1) <span class="math inline">\(E(y_{t})\)</span>を求めよ。</h3>
+<p>MA(q)過程の性質1より、<span class="math inline">\(E(y_{t}) = \mu\)</span>となります。</p>
+</div>
+<div id="gamma_0" class="section level3 unnumbered">
+<h3>(2) <span class="math inline">\(\gamma_{0}\)</span>を求めよ。</h3>
+<p>性質2より、<span class="math inline">\(\gamma_{0} = (1 + \theta_{1}^{2} + \theta_{2}^{2}) \sigma^{2}\)</span>となります。</p>
+</div>
+<div id="gamma_1" class="section level3 unnumbered">
+<h3>(3) <span class="math inline">\(\gamma_{1}\)</span>を求めよ。</h3>
+<p>性質3より、<span class="math inline">\(\gamma_{1} = (\theta_{1} + \theta_{1} \theta_{2}) \sigma^{2}\)</span>となります。</p>
+</div>
+<div id="gamma_2" class="section level3 unnumbered">
+<h3>(4) <span class="math inline">\(\gamma_{2}\)</span>を求めよ。</h3>
+<p>性質3より、<span class="math inline">\(\gamma_{2} = (\theta_{1} + \theta_{1}\theta_{2} + \theta_{2}) \sigma^{2}\)</span>となります。</p>
+</div>
+<div id="k-geq-3gamma_k-0" class="section level3 unnumbered">
+<h3>(5) <span class="math inline">\(k \geq 3\)</span>に対して、<span class="math inline">\(\gamma_{k} = 0\)</span>となることを確認せよ。</h3>
+<p><span class="math inline">\(k \geq 3\)</span>として、 <span class="math display">\[
+\begin{aligned}
+\gamma_{k} &amp;= \operatorname{Cov}(y_t, y_{t-k}) \\
+&amp;= \operatorname{Cov}(\mu+\epsilon_t+\theta_1\epsilon_{t-1}+\theta_2\epsilon_{t-2},
+\mu+\epsilon_{t-k}+\theta_1\epsilon_{t-k-1}+\theta_{2}\epsilon_{t-k-2}) \\
+&amp;= \operatorname{Cov}(\epsilon_t, \epsilon_{t-k}) + \operatorname{Cov}(\epsilon_t, \theta_1\epsilon_{t-k-1}) + \operatorname{Cov}(\epsilon_t, \theta_{2}\epsilon_{t-k-2}) \\
+&amp;+ \operatorname{Cov}(\theta_1\epsilon_{t-1}, \epsilon_{t-k}) + \operatorname{Cov}(\theta_1\epsilon_{t-1}, \theta_1\epsilon_{t-k-1}) + \operatorname{Cov}(\theta_1\epsilon_{t-1}, \theta_2\epsilon_{t-k-2}) \\ 
+&amp;+ \operatorname{Cov}(\theta_2\epsilon_{t-2}, \epsilon_{t-k}) + \operatorname{Cov}(\theta_2\epsilon_{t-2}, \theta_1\epsilon_{t-k-1}) + \operatorname{Cov}(\theta_2\epsilon_{t-2}, \theta_2\epsilon_{t-k-2}) \\
+&amp;= 0 (\because \epsilon の自己共分散は0)
+\end{aligned}
+\]</span></p>
+</div>
+</div>
+<div id="arma11-y_t-c-y_t-1-epsilon_t-theta_1epsilon_t-1-epsilon_t-sim-w-.-n-.leftsigma2right" class="section level2 unnumbered">
+<h2>2.4. ARMA(1,1)過程 <span class="math display">\[y_{t} = c + y_{t-1} + \epsilon_{t} + \theta_1\epsilon_{t-1}, \epsilon_{t} \sim W . N .\left(\sigma^{2}\right)\]</span>について、以下の問いに答えよ。</h2>
+<p>こちらでも、定理2.3(p.34)の定常ARMA(p,q)過程の性質について確認しておきましょう。 <span class="math display">\[
+\begin{array}{l}
+{\text {1. } \mu=E\left(y_{t}\right)=\frac{c}{1-\phi_{1}-\phi_{2}-\cdots \phi_{p}}} \\
+{\text {2. } q+1次以降の自己共分散と自己相関はy_tが従うARMA過程のAR部分と} \\
+{\text {  } 同一の係数をもつ以下のp次差分方程式（ユール・ウォーカー方程式）に従う。}\\
+\begin{aligned} \gamma_{k} &amp;=\phi_{1} \gamma_{k-1}+\cdots+\phi_{p} \gamma_{k-p}, \quad k \geq q+1 \\ \rho_{k} &amp;=\phi_{1} \rho_{k-1}+\cdots+\phi_{p} \rho_{k-p}, \quad k \geq q+1 \end{aligned} \\
+{\text {3. } ARMA過程の自己相関は指数的に減衰する。}
+\end{array}
+\]</span></p>
+<div id="283129e5ae9ae5b8b8e69da1e4bbb6e38292e6b182e38281e38288e38082" class="section level3 unnumbered">
+<h3>(1)定常条件を求めよ。</h3>
+<p>AR過程部分の特性方程式より、 <span class="math display">\[
+\begin{aligned}
+1 - \phi_1z &amp;= 0 \\
+z &amp;= \phi_1^{-1}
+\end{aligned}
+\]</span> <span class="math inline">\(|z| &gt; 1\)</span>となればよいので、定常条件は <span class="math display">\[
+|\phi_1^{-1}| &gt; 1 \Leftrightarrow |\phi_1| &lt; 1
+\]</span> となります。</p>
+</div>
+<div id="283229e58f8de8bba2e58fafe883bde69da1e4bbb6e38292e6b182e38281e38288e38082" class="section level3 unnumbered">
+<h3>(2)反転可能条件を求めよ。</h3>
+<p>MA過程部分の特性方程式より、 <span class="math display">\[
+\begin{aligned}
+1 + \theta_1z &amp;= 0 \\
+z &amp;= \theta_1^{-1}
+\end{aligned}
+\]</span> 同様にして、<span class="math inline">\(|\theta_1| &lt; 1 ~ (\because |z| &lt; 1)\)</span></p>
+</div>
+<div id="mu" class="section level3 unnumbered">
+<h3>(3)<span class="math inline">\(\mu\)</span>を求めよ。</h3>
+<p>定常ARMA(p, q)過程の性質1(p.35)より、 <span class="math display">\[
+\mu = \frac{c}{1 - \phi_1}
+\]</span> となります。</p>
+</div>
+<div id="gamma_0operatornamecovy_t-1-epsilon_t0-operatornamecovy_t-1-epsilon_t-1sigma2" class="section level3 unnumbered">
+<h3>(4)<span class="math inline">\(\gamma_0\)</span>を求めよ。(ヒント：<span class="math inline">\(\operatorname{Cov}(y_{t-1}, \epsilon_t)=0, ~ \operatorname{Cov}(y_{t-1}, \epsilon_{t-1})=\sigma^{2}\)</span>に注意すること)</h3>
+<p><span class="math display">\[
+\begin{aligned}
+\gamma_{0t} &amp;= \operatorname{Var}(y_t) \\
+&amp;= \operatorname{Var}(y_{t-1} + \epsilon_t + \theta_1\epsilon_{t-1}) \\
+&amp;= \phi_1^{2}\operatorname{Var}(y_{t-1}) + \operatorname{Var}(\epsilon_t) + \theta_1^{2}\operatorname{Var}(\epsilon_{t-1}) \\ 
+&amp;+ 2\phi_1\operatorname{Cov}(y_{t-1}, \epsilon_t) + 2\phi_1\theta_1\operatorname{Cov}(y_{t-1}, \epsilon_{t-1}) + 2\theta_1\operatorname{Cov}(\epsilon_t, \epsilon_{t-1}) \\
+&amp;= \phi_1^2\operatorname{Var}(y_{t-1}) + (1+\theta_1^{2}+2\phi_1\theta_1)\sigma^2
+\end{aligned}
+\]</span> <span class="math inline">\(y_t\)</span>が定常な場合、<span class="math inline">\(\gamma_0 = \operatorname{Var}(y_t) = \operatorname{Var}(y_{t-1})\)</span>なので、 <span class="math display">\[
+\begin{aligned}
+(1-\phi_1^{2})\gamma_0 &amp;= (1+\theta_1^2+2\phi_1\theta_1)\sigma^2 \\
+\gamma_0 &amp;= \frac{(1+\theta_1^2+2\phi_1\theta_1)\sigma^2}{1-\phi_1^2}
+\end{aligned}
+\]</span> となります。</p>
+</div>
+<div id="gamma_1-1" class="section level3 unnumbered">
+<h3>(5)<span class="math inline">\(\gamma_1\)</span>を求めよ。</h3>
+<p><span class="math display">\[
+\begin{aligned}
+\gamma_{1t} &amp;= \operatorname{Cov}(y_t, y_{t-1}) \\
+&amp;= \operatorname{Cov}(\phi_1y_{t-1}+\epsilon_t+\theta_1\epsilon_{t-1}, ~ y_{t-1}) \\
+&amp;= \operatorname{Cov}(\phi_1y_{t-1}, y_{t-1}) + \operatorname{Cov}(\epsilon_t, y_{t-1}) + \operatorname{Cov}(\theta_1\epsilon_{t-1}, y_{t-1}) \\
+&amp;= \phi_1\operatorname{Var}(y_{t-1}) + \theta_1\sigma^2
+\end{aligned}
+\]</span> 先程の（4）の<span class="math inline">\(\gamma_0\)</span>を用いて、 <span class="math display">\[
+\begin{aligned}
+\gamma_1 &amp;= \phi_1\gamma_0 + \theta_1\sigma^2 ~ (\because y_tは定常) \\
+&amp;= \frac{(1+\theta_1^2+2\phi_1\theta_1)\phi_1\sigma^2}{1-\phi_1^2} + \frac{\theta_1\sigma^2-\theta_1\phi_1^2\sigma^2}{1-\phi_1^2} \\
+&amp;= \frac{(\phi_1+\theta_1^2\phi_1+\theta_1\phi_1^2+\theta_1)\sigma^2}{1-\phi_1^2}
+\end{aligned}
+\]</span> となります。</p>
+</div>
+<div id="phi_1" class="section level3">
+<h3><span class="header-section-number">0.0.1</span> (6)<span class="math inline">\(\phi_1\)</span>を求めよ。</h3>
+<p><span class="math display">\[
+\begin{aligned}
+\rho_1 &amp;= \frac{\gamma_1}{\gamma_0} \\
+&amp;= \frac{(\phi_1+\theta_1^2\phi_1+\theta_1\phi_1^2+\theta_1)\sigma^2}{1-\phi_1^2} \cdot \frac{1-\phi_1^2}{(1+\theta_1^2+2\phi_1\theta_1)\sigma^2} \\
+&amp;= \frac{\phi_1+\theta_1^2\phi_1+\theta_1\phi_1^2+\theta_1}{1+2\phi_1\theta_1+\theta_1^2}
+\end{aligned}
+\]</span></p>
+</div>
+<div id="k-geq-2rho_k" class="section level3 unnumbered">
+<h3>(7)ユール・ウォーカー方程式を用いて、<span class="math inline">\(k \geq 2\)</span>において<span class="math inline">\(\rho_k\)</span>を求めよ。</h3>
+<p>性質2(p.35)より、<span class="math inline">\(k \geq 2\)</span>において、 <span class="math display">\[
+\rho_k = \phi_1\rho_{k-1}
+\]</span> これは初項<span class="math inline">\(\phi_1\rho_1\)</span>, 公比<span class="math inline">\(\phi_1\)</span>の等比数列なので、 <span class="math display">\[
+\begin{aligned}
+\rho_k &amp;= \phi_1\rho_1 \cdot \phi_1^{k-2} \\
+&amp;= \left( \frac{\phi_1+\theta_1^2\phi_1+\theta_1\phi_1^2+\theta_1}{1+2\phi_1\theta_1+\theta_1^{2}} \right)\phi_1^{k-1} 
+\end{aligned}
+\]</span> となります。</p>
+</div>
+</div>
+<div id="1.5" class="section level2 unnumbered">
+<h2>2.5 問題1.5でダウンロードしたデータを用いて以下の問いに答えよ。</h2>
+<p>ここで、いよいよRの出番です。</p>
+<div id="2.32.5" class="section level3 unnumbered">
+<h3>(1)表2.3と図2.5の結果を比較せよ。</h3>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># 外部パッケージの読み込み</span>
+<span class="kw">library</span>(readr)
+<span class="co"># 1.3のデータの読み込み</span>
+economicdata &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;economicdata.csv&quot;</span>)</code></pre></div>
+<pre><code>## Parsed with column specification:
+## cols(
+##   date = col_character(),
+##   topix = col_double(),
+##   exrate = col_double(),
+##   indprod = col_double(),
+##   cpi = col_double(),
+##   saunemp = col_double(),
+##   intrate = col_double()
+## )</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># indprod変数の対数差分系列(鉱工業生産指数の成長率)</span>
+diff_indprod &lt;-<span class="st"> </span><span class="kw">diff</span>(economicdata<span class="op">$</span>indprod)
+<span class="co"># diff_indprodのAR(4)モデル</span>
+ar_<span class="dv">4</span> &lt;-<span class="st"> </span><span class="kw">arima</span>(diff_indprod, <span class="dt">order =</span> <span class="kw">c</span>(<span class="dv">4</span>, <span class="dv">0</span>, <span class="dv">0</span>))
+<span class="co"># diff_indprodのARMA(1,2)モデル</span>
+arma_1_<span class="dv">2</span> &lt;-<span class="st"> </span><span class="kw">arima</span>(diff_indprod, <span class="dt">order =</span> <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">2</span>))
+<span class="co"># MA(3)</span>
+ma_<span class="dv">3</span> &lt;-<span class="st"> </span><span class="kw">arima</span>(diff_indprod, <span class="dt">order =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">3</span>))
+<span class="co"># ARMA(1, 1)</span>
+arma_1_<span class="dv">1</span> &lt;-<span class="st"> </span><span class="kw">arima</span>(diff_indprod, <span class="dt">order =</span> <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>))
+<span class="co"># ARMA(2, 1)</span>
+arma_2_<span class="dv">1</span> &lt;-<span class="st"> </span><span class="kw">arima</span>(diff_indprod, <span class="dt">order =</span> <span class="kw">c</span>(<span class="dv">2</span>, <span class="dv">0</span>, <span class="dv">1</span>))
+<span class="co"># ARMA(2, 2)</span>
+arma_2_<span class="dv">2</span> &lt;-<span class="st"> </span><span class="kw">arima</span>(diff_indprod, <span class="dt">order =</span> <span class="kw">c</span>(<span class="dv">2</span>, <span class="dv">0</span>, <span class="dv">2</span>))
+
+<span class="co"># 図2.5</span>
+## (a)標本自己相関
+<span class="kw">acf</span>(diff_indprod, <span class="dt">type =</span> <span class="st">&quot;correlation&quot;</span>, <span class="dt">main=</span><span class="st">&quot;(a)標本自己相関&quot;</span>,
+    <span class="dt">xlim=</span><span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">20</span>), <span class="dt">ylim=</span><span class="kw">c</span>(<span class="op">-</span><span class="fl">0.5</span>, <span class="fl">0.5</span>), <span class="dt">xlab=</span><span class="st">&quot;ラグ&quot;</span>, <span class="dt">ylab=</span><span class="st">&quot;自己相関&quot;</span>)</code></pre></div>
+<p><img src="chapter2_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">## (b)標本偏自己相関
+<span class="kw">pacf</span>(diff_indprod, <span class="dt">main=</span><span class="st">&quot;(b)標本偏自己相関&quot;</span>,
+     <span class="dt">xlim=</span><span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">20</span>), <span class="dt">ylim=</span><span class="kw">c</span>(<span class="op">-</span><span class="fl">0.5</span>, <span class="fl">0.5</span>), <span class="dt">xlab=</span><span class="st">&quot;ラグ&quot;</span>, <span class="dt">ylab=</span><span class="st">&quot;自己相関&quot;</span>)</code></pre></div>
+<p><img src="chapter2_files/figure-html/unnamed-chunk-1-2.png" width="672" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">## (c)AR(4)モデルの残差の診断
+<span class="kw">acf</span>(ar_<span class="dv">4</span><span class="op">$</span>residuals, <span class="dt">type =</span> <span class="st">&quot;correlation&quot;</span>, <span class="dt">main=</span><span class="st">&quot;(c)AR(4)モデルの残差の診断&quot;</span>,
+    <span class="dt">xlim=</span><span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">20</span>), <span class="dt">ylim=</span><span class="kw">c</span>(<span class="op">-</span><span class="fl">0.5</span>, <span class="fl">0.5</span>), <span class="dt">xlab=</span><span class="st">&quot;ラグ&quot;</span>, <span class="dt">ylab=</span><span class="st">&quot;自己相関&quot;</span>)</code></pre></div>
+<p><img src="chapter2_files/figure-html/unnamed-chunk-1-3.png" width="672" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">## (d)ARMA(1,2)モデルの残差の診断
+<span class="kw">acf</span>(arma_1_<span class="dv">2</span><span class="op">$</span>residuals, <span class="dt">type =</span> <span class="st">&quot;correlation&quot;</span>, <span class="dt">main=</span><span class="st">&quot;(d)ARMA(1,2)モデルの残差の診断&quot;</span>,
+    <span class="dt">xlim=</span><span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">20</span>), <span class="dt">ylim=</span><span class="kw">c</span>(<span class="op">-</span><span class="fl">0.5</span>, <span class="fl">0.5</span>), <span class="dt">xlab=</span><span class="st">&quot;ラグ&quot;</span>, <span class="dt">ylab=</span><span class="st">&quot;自己相関&quot;</span>)</code></pre></div>
+<p><img src="chapter2_files/figure-html/unnamed-chunk-1-4.png" width="672" /> これらのコードから、図2.5の4種類のグラフと同様なものが得られます。表2.3については、</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># AIC</span>
+aic_ar4 &lt;-<span class="st"> </span><span class="kw">round</span>(ar_<span class="dv">4</span><span class="op">$</span>aic, <span class="dt">digits =</span> <span class="dv">0</span>)
+aic_ma3 &lt;-<span class="st"> </span><span class="kw">round</span>(ma_<span class="dv">3</span><span class="op">$</span>aic, <span class="dt">digits =</span> <span class="dv">0</span>)
+aic_arma11 &lt;-<span class="st"> </span><span class="kw">round</span>(arma_1_<span class="dv">1</span><span class="op">$</span>aic, <span class="dt">digits =</span> <span class="dv">0</span>)
+aic_arma21 &lt;-<span class="st"> </span><span class="kw">round</span>(arma_2_<span class="dv">1</span><span class="op">$</span>aic, <span class="dt">digits =</span> <span class="dv">0</span>)
+aic_arma12 &lt;-<span class="st"> </span><span class="kw">round</span>(arma_1_<span class="dv">2</span><span class="op">$</span>aic, <span class="dt">digits =</span> <span class="dv">0</span>)
+aic_arma22 &lt;-<span class="st"> </span><span class="kw">round</span>(arma_2_<span class="dv">2</span><span class="op">$</span>aic, <span class="dt">digits =</span> <span class="dv">0</span>)
+vec_aic &lt;-<span class="st"> </span><span class="kw">c</span>(aic_ar4, aic_ma3, aic_arma11, aic_arma21, aic_arma12, aic_arma22)
+
+<span class="co"># SIC(BIC)</span>
+sic_ar4 &lt;-<span class="st"> </span><span class="kw">round</span>(<span class="kw">BIC</span>(ar_<span class="dv">4</span>), <span class="dt">digits =</span> <span class="dv">0</span>)
+sic_ma3 &lt;-<span class="st"> </span><span class="kw">round</span>(<span class="kw">BIC</span>(ma_<span class="dv">3</span>), <span class="dt">digits =</span> <span class="dv">0</span>)
+sic_arma11 &lt;-<span class="st"> </span><span class="kw">round</span>(<span class="kw">BIC</span>(arma_1_<span class="dv">1</span>), <span class="dt">digits =</span> <span class="dv">0</span>)
+sic_arma21 &lt;-<span class="st"> </span><span class="kw">round</span>(<span class="kw">BIC</span>(arma_2_<span class="dv">1</span>), <span class="dt">digits =</span> <span class="dv">0</span>)
+sic_arma12 &lt;-<span class="st"> </span><span class="kw">round</span>(<span class="kw">BIC</span>(arma_1_<span class="dv">2</span>), <span class="dt">digits =</span> <span class="dv">0</span>)
+sic_arma22 &lt;-<span class="st"> </span><span class="kw">round</span>(<span class="kw">BIC</span>(arma_2_<span class="dv">2</span>), <span class="dt">digits =</span> <span class="dv">0</span>)
+vec_sic &lt;-<span class="st"> </span><span class="kw">c</span>(sic_ar4, sic_ma3, sic_arma11, sic_arma21, sic_arma12, sic_arma22)
+
+<span class="co"># 表2.3の作成</span>
+table_ic &lt;-<span class="st"> </span><span class="kw">rbind.data.frame</span>(vec_aic, vec_sic)
+table_ic &lt;-<span class="st"> </span><span class="kw">cbind</span>(<span class="kw">c</span>(<span class="st">&quot;AIC&quot;</span>, <span class="st">&quot;SIC&quot;</span>), table_ic)
+<span class="kw">colnames</span>(table_ic) &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;モデル&quot;</span>, <span class="st">&quot;AR(4)&quot;</span>, <span class="st">&quot;MA(3)&quot;</span>, <span class="st">&quot;ARMA(1,1)&quot;</span>, <span class="st">&quot;ARMA(2,1)&quot;</span>, <span class="st">&quot;ARMA(1,2)&quot;</span>, <span class="st">&quot;ARMA(2,2)&quot;</span>)
+
+table_ic</code></pre></div>
+<pre><code>##   モデル AR(4) MA(3) ARMA(1,1) ARMA(2,1) ARMA(1,2) ARMA(2,2)
+## 1    AIC  1062  1067      1095      1079      1061      1067
+## 2    SIC  1085  1086      1110      1098      1080      1091</code></pre>
+<p>沖本本の表2.3とは異なり、どちらの情報量基準でもARMA(1,2)モデルが相対的にベストなモデルとなりました。なんでだろう？？もし、理由が分かる方などがいらっしゃいましたら、<a href="https://twitter.com/hiyakebaka">私のtwitter</a>にDMやコメントとしてご指摘いただけたら幸いです。</p>
+</div>
+<div id="ar4arma1210" class="section level3 unnumbered">
+<h3>(2)AR(4)モデルとARMA(1,2)モデルの残差について、10期までの自己相関をかばん検定せよ。</h3>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># AR(4)モデルの残差のかばん検定</span>
+resid_ar4 &lt;-<span class="st"> </span>ar_<span class="dv">4</span><span class="op">$</span>residuals
+lag &lt;-<span class="st"> </span><span class="dv">1</span><span class="op">:</span><span class="dv">10</span>
+box.t_ar4 &lt;-<span class="st"> </span><span class="kw">apply</span>(<span class="kw">as.matrix</span>(lag), <span class="dv">1</span>, <span class="cf">function</span>(x) {
+  tmp =<span class="st"> </span><span class="kw">Box.test</span>(resid_ar4, <span class="dt">type =</span> <span class="st">&quot;Ljung-Box&quot;</span>, <span class="dt">lag =</span> x)
+  <span class="kw">return</span>(<span class="kw">c</span>(<span class="kw">round</span>(tmp<span class="op">$</span>statistic, <span class="dt">digits =</span> <span class="dv">2</span>), <span class="kw">round</span>(tmp<span class="op">$</span>p.value, <span class="dt">digits =</span> <span class="dv">3</span>)))
+})
+box.t_ar4_df &lt;-<span class="st"> </span><span class="kw">data.frame</span>(box.t_ar4)
+<span class="kw">colnames</span>(box.t_ar4_df) &lt;-<span class="st"> </span><span class="dv">1</span><span class="op">:</span><span class="dv">10</span>
+<span class="kw">rownames</span>(box.t_ar4_df) &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;Q(m)&quot;</span>, <span class="st">&quot;p-value&quot;</span>)
+box.t_ar4_df</code></pre></div>
+<pre><code>##             1     2     3     4     5     6     7     8     9     10
+## Q(m)    0.080 0.160 0.160 0.190 0.640 0.650 2.120 8.010 8.020 12.730
+## p-value 0.772 0.925 0.984 0.996 0.986 0.996 0.953 0.432 0.532  0.239</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># ARMA(1,2)モデルの残差のかばん検定</span>
+resid_arma12 &lt;-<span class="st"> </span>arma_1_<span class="dv">2</span><span class="op">$</span>residuals
+box.t_arma12 &lt;-<span class="st"> </span><span class="kw">apply</span>(<span class="kw">as.matrix</span>(lag), <span class="dv">1</span>, <span class="cf">function</span>(x) {
+  tmp =<span class="st"> </span><span class="kw">Box.test</span>(resid_arma12, <span class="dt">type =</span> <span class="st">&quot;Ljung-Box&quot;</span>, <span class="dt">lag =</span> x)
+  <span class="kw">return</span>(<span class="kw">c</span>(<span class="kw">round</span>(tmp<span class="op">$</span>statistic, <span class="dt">digits =</span> <span class="dv">2</span>), <span class="kw">round</span>(tmp<span class="op">$</span>p.value, <span class="dt">digits =</span> <span class="dv">3</span>)))
+})
+box.t_arma12_df &lt;-<span class="st"> </span><span class="kw">data.frame</span>(box.t_arma12)
+<span class="kw">colnames</span>(box.t_arma12_df) &lt;-<span class="st"> </span><span class="dv">1</span><span class="op">:</span><span class="dv">10</span>
+<span class="kw">rownames</span>(box.t_arma12_df) &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;Q(m)&quot;</span>, <span class="st">&quot;p-value&quot;</span>)
+box.t_arma12_df</code></pre></div>
+<pre><code>##             1     2     3    4     5     6    7     8     9     10
+## Q(m)    0.020 0.060 0.530 0.53 2.970 3.020 4.09 8.920 8.930 11.590
+## p-value 0.883 0.972 0.911 0.97 0.705 0.806 0.77 0.349 0.443  0.313</code></pre>
+<p>AR(4)モデル、ARMA(1,2)モデルともに10期までのかばん検定のp値が0.05を超えており、<span class="math inline">\(H_0:\rho_1=\rho_2=\cdots=\rho_m=0\)</span>という帰無仮説は棄却されず、モデル残差は10期までのラグ次数それぞれにおいて有意な自己相関を持たないと分かります。モデル残差に有意な自己相関がみられる場合は、そのラグ次数p期までは説明できるモデルという認識をしなければなりません。（p期以前は有意な自己相関を持たないとき）</p>
+<p>結論としては、どちらの時系列過程も1期から10期までについては説明できるモデルとして適切なものであるといえます。</p>
+</div>
+</div>
+<div id="section" class="section level2 unnumbered">
+<h2>2.6</h2>
+<p>問2.6については対象とするarma.xlsファイルを入手できなかったため割愛します。</p>
+<p>3章の問題もできるだけ早く取り組めたらと思います。（大抵、スローペースです．．．）</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+},
+"search": false
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
