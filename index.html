@@ -11,16 +11,16 @@
 
   <meta property="og:title" content="沖本本　第二章" />
   <meta property="og:type" content="book" />
-  
-  
-  
-  
+
+
+
+
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="沖本本　第二章" />
-  
-  
-  
+
+
+
 
 
 
@@ -28,8 +28,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  
-  
+
+
 
 
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
@@ -186,11 +186,11 @@ y_{t}=c+\phi_{1} y_{t-1}+\phi_{2} y_{t-2}+\epsilon_{t}, \epsilon_{t} \sim W . N 
 \lambda^{2}=\left(\phi_{1} / 2\right)^{2}+\left(\sqrt{-\left(\phi_{1}^{2}+4 \phi_{2}\right)} / 2\right)^{2}=\phi_{1}^{2} / 4-\left(\phi_{1}^{2}+4 \phi_{2}\right) / 4=-\phi_{2}
 \]</span> となります。</p>
 <p><span class="math inline">\(|\lambda|&lt;1\)</span>より、 <span class="math display">\[
--\phi_2&lt;1 \Leftrightarrow \phi_2&gt;-1 
+-\phi_2&lt;1 \Leftrightarrow \phi_2&gt;-1
 \]</span> という不等式が導かれ、上記3番目の条件が導かれます。</p>
 <p>以上から、AR(2) 過程の定常条件は <span class="math display">\[
 \begin{array}{l}{\text { 1. } \phi_{2}&lt;1+\phi_{1}} \\ {\text { 2. } \phi_{2}&lt;1-\phi_{1}} \\ {\text { 3. } \phi_{2}&gt;-1}\end{array}
-\]</span> であることが確認できました。 因みに、この条件を図示するとこのようになります。 <img src="ar2_stationary2.PNG"></p>
+\]</span> であることが確認できました。 因みに、この条件を図示するとこのようになります。 <img src="chapter2_files/figure-html/ar2_stationary2.PNG"></p>
 <p>引用元：<a href="https://stats.stackexchange.com/questions/118019/a-proof-for-the-stationarity-of-an-ar2">SlackExchage</a></p>
 </div>
 <div id="322e322e20e6aca1e381aee383a2e38387e383abe381aee4b8ade3818be38289e38081e5ae9ae5b8b8e381aae383a2e38387e383abe381a8e58f8de8bba2e58fafe883bde381aae383a2e38387e383abe38292e38199e381b9e381a6e981b8e68a9ee3819be38288e38082" class="section level2 unnumbered">
@@ -219,7 +219,7 @@ y_{t}=y_{t-1}+\epsilon_{t}+0.5\epsilon_{t-1}, \epsilon_{t} \sim W . N .\left(\si
 <div id="a" class="section level3 unnumbered">
 <h3>モデル(a)について</h3>
 <p>これは、MA過程でも、AR過程でもないモデルです。従って、1次以降に自己共分散を持たず(<span class="math inline">\(\gamma_k=0(k=1,2,\ldots)\)</span>)、時間に依存しない期待値<span class="math inline">\(\mu\)</span>をもつはずです。 <span class="math display">\[
-\begin{aligned} 
+\begin{aligned}
 \operatorname{Cov}(y_t, y_{t-k}) &amp;= \mathrm{E}[(y_t-\mu_t)(y_{t-k}-\mu_{t-k})] \\
 &amp;=E[(2+\epsilon_t-2)(2+\epsilon_{t-k}-2)] \\
 &amp;=E[(\epsilon_t-0)(\epsilon_{t-k}-0)] \\
@@ -241,7 +241,7 @@ y_{t}=y_{t-1}+\epsilon_{t}+0.5\epsilon_{t-1}, \epsilon_{t} \sim W . N .\left(\si
 <p>MA特性方程式は <span class="math display">\[
 \begin{aligned}
 1+1\times z &amp;= 0 \\
-z &amp;= -1 
+z &amp;= -1
 \end{aligned}
 \]</span> 従って、MA特性方程式のすべての解の絶対値が1より大きいという条件を満たさないので、モデル(b)は定常かつ反転不可能なモデルです。</p>
 </div>
@@ -340,7 +340,7 @@ z &amp;= -2 \Rightarrow |z| &gt; 1
 &amp;= \operatorname{Cov}(\mu+\epsilon_t+\theta_1\epsilon_{t-1}+\theta_2\epsilon_{t-2},
 \mu+\epsilon_{t-k}+\theta_1\epsilon_{t-k-1}+\theta_{2}\epsilon_{t-k-2}) \\
 &amp;= \operatorname{Cov}(\epsilon_t, \epsilon_{t-k}) + \operatorname{Cov}(\epsilon_t, \theta_1\epsilon_{t-k-1}) + \operatorname{Cov}(\epsilon_t, \theta_{2}\epsilon_{t-k-2}) \\
-&amp;+ \operatorname{Cov}(\theta_1\epsilon_{t-1}, \epsilon_{t-k}) + \operatorname{Cov}(\theta_1\epsilon_{t-1}, \theta_1\epsilon_{t-k-1}) + \operatorname{Cov}(\theta_1\epsilon_{t-1}, \theta_2\epsilon_{t-k-2}) \\ 
+&amp;+ \operatorname{Cov}(\theta_1\epsilon_{t-1}, \epsilon_{t-k}) + \operatorname{Cov}(\theta_1\epsilon_{t-1}, \theta_1\epsilon_{t-k-1}) + \operatorname{Cov}(\theta_1\epsilon_{t-1}, \theta_2\epsilon_{t-k-2}) \\
 &amp;+ \operatorname{Cov}(\theta_2\epsilon_{t-2}, \epsilon_{t-k}) + \operatorname{Cov}(\theta_2\epsilon_{t-2}, \theta_1\epsilon_{t-k-1}) + \operatorname{Cov}(\theta_2\epsilon_{t-2}, \theta_2\epsilon_{t-k-2}) \\
 &amp;= 0 (\because \epsilon の自己共分散は0)
 \end{aligned}
@@ -390,7 +390,7 @@ z &amp;= \theta_1^{-1}
 \begin{aligned}
 \gamma_{0t} &amp;= \operatorname{Var}(y_t) \\
 &amp;= \operatorname{Var}(y_{t-1} + \epsilon_t + \theta_1\epsilon_{t-1}) \\
-&amp;= \phi_1^{2}\operatorname{Var}(y_{t-1}) + \operatorname{Var}(\epsilon_t) + \theta_1^{2}\operatorname{Var}(\epsilon_{t-1}) \\ 
+&amp;= \phi_1^{2}\operatorname{Var}(y_{t-1}) + \operatorname{Var}(\epsilon_t) + \theta_1^{2}\operatorname{Var}(\epsilon_{t-1}) \\
 &amp;+ 2\phi_1\operatorname{Cov}(y_{t-1}, \epsilon_t) + 2\phi_1\theta_1\operatorname{Cov}(y_{t-1}, \epsilon_{t-1}) + 2\theta_1\operatorname{Cov}(\epsilon_t, \epsilon_{t-1}) \\
 &amp;= \phi_1^2\operatorname{Var}(y_{t-1}) + (1+\theta_1^{2}+2\phi_1\theta_1)\sigma^2
 \end{aligned}
@@ -435,7 +435,7 @@ z &amp;= \theta_1^{-1}
 \]</span> これは初項<span class="math inline">\(\phi_1\rho_1\)</span>, 公比<span class="math inline">\(\phi_1\)</span>の等比数列なので、 <span class="math display">\[
 \begin{aligned}
 \rho_k &amp;= \phi_1\rho_1 \cdot \phi_1^{k-2} \\
-&amp;= \left( \frac{\phi_1+\theta_1^2\phi_1+\theta_1\phi_1^2+\theta_1}{1+2\phi_1\theta_1+\theta_1^{2}} \right)\phi_1^{k-1} 
+&amp;= \left( \frac{\phi_1+\theta_1^2\phi_1+\theta_1\phi_1^2+\theta_1}{1+2\phi_1\theta_1+\theta_1^{2}} \right)\phi_1^{k-1}
 \end{aligned}
 \]</span> となります。</p>
 </div>
